@@ -1,7 +1,7 @@
 public class Stopwatch {
     private final long start;
 
-    public Stopwatch(long start){
+    public Stopwatch(){
         start = System.currentTimeMillis(); //this is to find the current time
     }
 

@@ -1,6 +1,6 @@
 
 public class Q3 {
-    public static int linear()
+    public static double linear()
     {
         int step = 0;
         int i;
@@ -9,12 +9,13 @@ public class Q3 {
         {
             step++;
         }
-        return step;
+        return linearsw.elapsedTime();
     }
-    public static int quadratic()
+    public static double quadratic()
     {
         int step = 0;
         int i;
+        Stopwatch quadraticsw = new Stopwatch();
         for(i=0; i <100000; i++)
         {
             int j;
@@ -23,13 +24,14 @@ public class Q3 {
                 step++;
             }
         }
-        return step;
+        return quadraticsw.elapsedTime();
     }
 
-    public static int cubic()
+    public static double cubic()
     {
         int step = 0;
         int i;
+        Stopwatch cubicsw = new Stopwatch();
         for(i=0; i <100000; i++)
         {
             int j;
@@ -42,6 +44,6 @@ public class Q3 {
                 }
             }
         }
-        return step;
+        return cubicsw.elapsedTime();
     }
 }
